@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer satisfaction Survey</title> 
+  </head>
+      <h1>Customer Satisfaction Survey Form</h1>
+      <p id="description">Thank you for taking your time to complete this survey.</p>   
+    <form id="survey-form">
+      <div>
+      <label class="select" id="name-label">Name </label>
+      <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div>
+      <label class="select" id="email-label">Email</label>
+      <input type="text" placeholder="Enter your Email" required><br>
+      </div>
+      <div>
+      <label class="select" id="number-label">Age</label>
+      <input type="number" placeholder="Age" class="clue" min="10" max="99"><br>
+      </div>
+      <div>
+      <label id="Occupation">Which best describes your current role?</label>
+    <select id="dropdown" name="role" required>
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="self-employed">Self employed</option>
+      <option value="employed">Employed</option>
+      <option value="other">Prefer not to say</option>
+      </select>
+      </div>
+      <div>
+      <p>How would you rate our services?
+      <select id="dropdown" name="rating" required>
+        <option>Very poor</option>
+        <option>Poor</option>
+        <option>Fair</option>
+        <option>Good</option>
+        <option>Very good</option>
+        <option>Excellent</option></select></p>
+    
+      </div>
+      <div id="input-radio">
+     <p> Would you recommend us to a friend?
+     <input name="recommend" type="radio" id="deinitely">
+        <label for="definitely">Definitely</label>
+   <input name="recommend" type="radio" id="maybe">
+        <label for="maybe">Maybe</label>
+  <input name="recommend" type="radio" id="not-sure">
+        <label for="not-sure">Not sure</label></p>
+</div>
+<div>
+<p>What would you like to see improved?<span>(Check all that apply)</span></p>
+<label>
+        <input name="prefer" type="checkbox">Response time</input></label>
+   <label> <input name="prefer" type="checkbox">Delivery time</input></label>
+<label><input name="prefer" type="checkbox">Quality of services</label><br>
+<label> <input name="prefer" type="checkbox">Others</label>
+<p>Comments or suggestions</p>
+<textarea class="input-text" name="comment" id="comment" type="text" placeholder="Enter your comment here..."></textarea>
+</div>
+<button type="button" id="submit">Submit</button>
+    </form>
+</html>
